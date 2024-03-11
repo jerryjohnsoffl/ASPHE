@@ -945,4 +945,22 @@ nav .signup-btn .signup {
 }
 
 
-.article .read-more {}
+.article .read-more {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+}
+
+.article .read-more p {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+
+.article .read-more img {
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
