@@ -957,6 +957,8 @@ nav .signup-btn .signup {
     position: absolute;
     top: 50%;
     left: 3%;
+    font-size: var(--para-size);
+    color: var(--para-color);
 }
 
 .article .read-more img {
