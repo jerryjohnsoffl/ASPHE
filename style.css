@@ -423,6 +423,7 @@ nav .signup-btn .signup {
     font-size: var(--para-size);
     font-weight: var(--para-weight);
     color: var(--para-color);
+    line-height: 1.3rem;
 }
 
 
@@ -1792,6 +1793,7 @@ footer .menu li a:any-link {
     .states .state p {
         font-size: 10px;
         font-weight: 100;
+        line-height: 1.1rem;
     }
 
     .states .state h3 {
