@@ -131,6 +131,7 @@ nav .signup-btn .signup {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .intro main p {
@@ -1701,7 +1702,7 @@ footer .menu li a:any-link {
 
 }
 /* 768px and above */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1270px) {
 
     /* intro */
     .intro header {
@@ -2011,6 +2012,7 @@ footer .menu li a:any-link {
         flex-direction: column;
         margin: 2rem;
         justify-content: center;
+        width: 60%;
     }
 
     .intro main .enroll,
