@@ -1791,6 +1791,7 @@ footer .menu li a:any-link {
 
     .states .state p {
         font-size: 10px;
+        font-weight: 100;
     }
 
     .states .state h3 {
@@ -2215,6 +2216,12 @@ footer .menu li a:any-link {
 }
 
 @media screen and (max-width: 485px) {
+
+    /* intro 2 */
+
+    .intro-2 {
+        height: 1780px;
+    }
 
     /* intro 8 */
 
