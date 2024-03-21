@@ -89,7 +89,7 @@ section {
 }
 
 .intro header img {
-    height: 75px;
+    height: 63px;
 }
 
 .intro nav {
@@ -273,10 +273,13 @@ nav .signup-btn .signup {
 }
 
 
+
 .p-top .p1 {
-    font-weight: 500;
+    line-height: 1.6;
+    font-weight: 500 !important;
+  
     letter-spacing: -.5px;
-    color: #28285e;
+    color: #2D2D2D;
     margin-left: 2rem;
     width: 80%;
 }
@@ -288,24 +291,28 @@ nav .signup-btn .signup {
 }
 
 .para .p2 {
+    line-height: 1.6;
     font-weight: var(--para-weight);
     font-size: var(--para-size);
     padding:0 3rem;
-    color: var(--para-color);
+color: #7A7A7A !important;
+
     width: 90%;
 }
 
 .para .sign {
-    padding: 0 1rem;
+    padding: 0 3rem;
     margin: 1rem 0;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .sign .read-more {
-    color: var(--para-color);
+    color:#7A7A7A;
+    padding-right: 8px;
+
     text-decoration: none;
     font-weight: var(--para-weight);
     font-size: var(--para-size);
