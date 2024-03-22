@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>ASPHE</title>
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.19.2/dist/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script
       defer
@@ -17,7 +23,7 @@
   <body>
     <section class="intro">
       <header class="uk-container">
-        <img src="./img/logowhite.svg" alt="" />
+        <img src="./img/LOGO WHITE0948.svg" alt="" />
         <nav>
           <nav class="menu">
             <a href="" class="nav-bar link">Home</a>
@@ -53,7 +59,7 @@
       <footer>
         <div id="my-animation-container">
           <a href="#intro-2">
-          <dotlottie-player
+          <dotlottie-player class=" "
             src="https://lottie.host/bf54d3ad-da5f-4a6c-81bc-b8af9844f2df/W9vV2azxIu.json"
             background="transparent"
             speed="1"
@@ -61,7 +67,7 @@
             loop
             autoplay
           ></dotlottie-player>
-          <p>Scroll down</p>
+          <p class="margin-small-top">Scroll down</p>
         </a>
         </div>
       </footer>
@@ -467,72 +473,159 @@
         </div>
       </div>
     </section>
-    <section class="intro-9">
-      <div class="container">
-        <img src="./img/“.svg" class="double-q" alt="" />
-        <div class="content-m">
-          <div class="content1">
-            <div class="person person1">
-              <img src="./img/Ellipse 56.svg" alt="" />
-              <h5>Sami Wade</h5>
-              <p>Turkey</p>
-            </div>
-            <div class="person person2">
-              <img src="./img/Ellipse 57.svg" alt="" />
-              <h5>John Peter</h5>
-              <p>India</p>
-            </div>
-            <div class="person person3 p-active">
-              <img src="./img/Ellipse 58.svg" alt="" />
-              <h5>Sonia Blake</h5>
-              <p>Ukraine</p>
-            </div>
-          </div>
-          <div class="content2">
-            <h1>Inspiring Stories!</h1>
-            <p>
-              “As a patient, my journey with this healthcare provider has been
-              nothing short of exceptional. Their compassionate care,
-              cutting-edge treatments, and personalized approach made a
-              significant difference in my recovery. Grateful for the
-              transformative impact on my health and well-being. Their
-              expertise, dedication, and personalized attention.”
-            </p>
-            <div class="rating"></div>
-          </div>
-        </div>
-        <div class="navigate">
-          <div class="rating">
-            <h2>4.9</h2>
-            <p><a href="">Zodac overall rating</a> based on 7541 reviews</p>
-          </div>
-          <div class="toggle-btn">
-            <label for="toggle1" class="toggle-label toggle-label-1"></label>
-            <input
-              type="radio"
-              id="toggle1"
-              name="testimony-toggle"
-              onclick="toggleTestimony()"
-              checked
-            />
-            <label for="toggle2" class="toggle-label toggle-label-2"></label>
-            <input
-              type="radio"
-              id="toggle2"
-              name="testimony-toggle"
-              onclick="toggleTestimony()"
-            />
-            <label for="toggle3" class="toggle-label toggle-label-3"></label>
-            <input
-              type="radio"
-              id="toggle3"
-              name="testimony-toggle"
-              onclick="toggleTestimony()"
-            />
-          </div>
-        </div>
+
+
+    <!-- slider -->
+    <div class="uk-position-relative uk-light" style="height: 513px;" uk-slideshow>
+
+      <ul class="uk-slideshow-items">
+          <li>
+            <section class="intro-9">
+              <div class="container">
+                <img src="./img/“.svg" class="double-q" alt="" />
+                <div class="content-m">
+                  <div class="content1">
+                    <div class="person person1">
+                      <img src="./img/Ellipse 56.svg" alt="" />
+                      <h5>Sami Wade</h5>
+                      <p>Turkey</p>
+                    </div>
+                    <div class="person person2">
+                      <img src="./img/Ellipse 57.svg" alt="" />
+                      <h5>John Peter</h5>
+                      <p>India</p>
+                    </div>
+                    <div class="person person3 p-active">
+                      <img src="./img/Ellipse 58.svg" alt="" />
+                      <h5>Sonia Blake</h5>
+                      <p>Ukraine</p>
+                    </div>
+                  </div>
+                  <div class="content2">
+                    <h1>Inspiring Stories!</h1>
+                    <p>
+                      “As a patient, my journey with this healthcare provider has been
+                      nothing short of exceptional. Their compassionate care,
+                      cutting-edge treatments, and personalized approach made a
+                      significant difference in my recovery. Grateful for the
+                      transformative impact on my health and well-being. Their
+                      expertise, dedication, and personalized attention.”
+                    </p>
+                    <div class="rating"></div>
+                  </div>
+                </div>
+                <div class="navigate">
+                  <div class="rating">
+                    <h2>4.9</h2>
+                    <p><a href="">Zodac overall rating</a> based on 7541 reviews</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="intro-9">
+              <div class="container">
+                <img src="./img/“.svg" class="double-q" alt="" />
+                <div class="content-m">
+                  <div class="content1">
+                    <div class="person person1">
+                      <img src="./img/Ellipse 56.svg" alt="" />
+                      <h5>Sami Wade</h5>
+                      <p>Turkey</p>
+                    </div>
+                    <div class="person person2">
+                      <img src="./img/Ellipse 57.svg" alt="" />
+                      <h5>John Peter</h5>
+                      <p>India</p>
+                    </div>
+                    <div class="person person3 p-active">
+                      <img src="./img/Ellipse 58.svg" alt="" />
+                      <h5>Sonia Blake</h5>
+                      <p>Ukraine</p>
+                    </div>
+                  </div>
+                  <div class="content2">
+                    <h1>Inspiring Stories!</h1>
+                    <p>
+                      “As a patient, my journey with this healthcare provider has been
+                      nothing short of exceptional. Their compassionate care,
+                      cutting-edge treatments, and personalized approach made a
+                      significant difference in my recovery. Grateful for the
+                      transformative impact on my health and well-being. Their
+                      expertise, dedication, and personalized attention.”
+                    </p>
+                    <div class="rating"></div>
+                  </div>
+                </div>
+                <div class="navigate">
+                  <div class="rating">
+                    <h2>4.9</h2>
+                    <p><a href="">Zodac overall rating</a> based on 7541 reviews</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="intro-9">
+              <div class="container">
+                <img src="./img/“.svg" class="double-q" alt="" />
+                <div class="content-m">
+                  <div class="content1">
+                    <div class="person person1">
+                      <img src="./img/Ellipse 56.svg" alt="" />
+                      <h5>Sami Wade</h5>
+                      <p>Turkey</p>
+                    </div>
+                    <div class="person person2">
+                      <img src="./img/Ellipse 57.svg" alt="" />
+                      <h5>John Peter</h5>
+                      <p>India</p>
+                    </div>
+                    <div class="person person3 p-active">
+                      <img src="./img/Ellipse 58.svg" alt="" />
+                      <h5>Sonia Blake</h5>
+                      <p>Ukraine</p>
+                    </div>
+                  </div>
+                  <div class="content2">
+                    <h1>Inspiring Stories!</h1>
+                    <p>
+                      “As a patient, my journey with this healthcare provider has been
+                      nothing short of exceptional. Their compassionate care,
+                      cutting-edge treatments, and personalized approach made a
+                      significant difference in my recovery. Grateful for the
+                      transformative impact on my health and well-being. Their
+                      expertise, dedication, and personalized attention.”
+                    </p>
+                    <div class="rating"></div>
+                  </div>
+                </div>
+                <div class="navigate">
+                  <div class="rating">
+                    <h2>4.9</h2>
+                    <p><a href="">Zodac overall rating</a> based on 7541 reviews</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </section>
+          </li>
+      </ul>
+  
+      <div class="uk-position-bottom-right uk-position-small">
+          <ul class="uk-dotnav">
+              <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+              <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+              <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+          </ul>
       </div>
-    </section>
+  
+  </div>
+     
     <section class="intro-11">
       <div class="content">
         <div class="top-11">
