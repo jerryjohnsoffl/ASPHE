@@ -85,3 +85,17 @@ function addRevealEffect(elements) {
 const elementsToReveal = document.querySelectorAll('.subject');
 addRevealEffect(elementsToReveal);
  
+
+
+ // JavaScript to handle scrolling
+ const intro1 = document.getElementById('intro-1');
+ const intro2 = document.getElementById('intro-2');
+ const otherSection = document.getElementById('other-section');
+
+ intro1.addEventListener('click', () => {
+   intro2.scrollIntoView({ behavior: 'smooth' });
+ });
+
+ intro2.addEventListener('click', () => {
+   otherSection.scrollIntoView({ behavior: 'smooth' });
+ });
