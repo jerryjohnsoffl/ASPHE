@@ -1,19 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+.uk-light .uk-dotnav>*>*{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #28285E;;
+    
+    
+     
+}
+.uk-light .uk-dotnav>.uk-active>*{
+    margin-top: -2.1px;
+
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border: 4px solid #0284FE80;
+}
+
+@media(min-width:980px){
+
+    .uk-container{
+        max-width: 1400px;
+    }
+}
+
+p{
+  line-height: 1.59 !important;  
+}
+
+.margin-small-top{
+    margin-top: 0.5rem !important;
+}
+
+.margin-top{
+    margin-top: 1rem !important;
+}
+
+.margin-medium-top{
+    margin-top: 1.5rem !important;
+}
+
+.margin-large-top{
+    margin-top: 2rem !important;
+}
+
+
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-weight: 500;
+    scroll-behavior: smooth;
 }
 
 :root {
-    --para-color: #00b1b9;
+    --para-color: #00B1B9;
     --para-size: 14px;
     --para-weight:400;
     --h1-color: linear-gradient(to bottom right, #017BFF, #0C1678);
     --h1-weight: 500;
+ 
+    --linear-color: linear-gradient(116.82deg, #017BFF 0%, #0C1678 100%);
+
+
 }
 
 
@@ -24,6 +77,9 @@ body {
     overflow-x: hidden;
 }
 
+p{
+    font-weight: 400 !important;
+}
 section {
     width: 100%;
     height: 920px;
@@ -31,13 +87,24 @@ section {
 }
 
 /* intro */
+.nav-bar{
+    font-size: 0.99rem !important;
+}
 
+
+
+@media(min-width:980px){
+
+    .intro-2 .rectangle{
+        padding: 0 3rem;
+    }
+}
 .intro {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom right, #017BFF,#0C1678);
     position: relative;
-    height: 680px;
+    height: 730px;
     align-items: center;
 }
 
@@ -74,7 +141,7 @@ section {
 }
 
 .intro header img {
-    height: 75px;
+    height: 63px;
 }
 
 .intro nav {
@@ -97,11 +164,11 @@ nav .signup-btn {
 
 nav .signup-btn .login,
 nav .signup-btn .signup {
-    padding: .75rem 1rem;
+    padding: 0.45rem 0.1rem;
     border-radius: 40px;
     border: solid #fff 2px;
-    margin: 0 .5rem;
-    width: 120px;
+    margin: 0 0.5rem;
+    width: 111px;
 }
 
 nav .signup-btn .login {
@@ -134,9 +201,13 @@ nav .signup-btn .signup {
     width: 100%;
 }
 
-.intro main p {
-    width: 70%;
+@media(min-width:980px){
+
+    .intro main p {
+        width: 48%;
+    }
 }
+
 
 .intro main h1 {
     font-size: 4rem;
@@ -145,12 +216,18 @@ nav .signup-btn .signup {
 
 .intro main .enroll,
 .intro main .contact {
-    padding: .75rem 1rem;
+    padding: 0.8rem 3rem;
     border-radius: 40px;
     border: solid #fff;
-    margin: 1rem .5rem;
+    margin: 2rem 0.5rem;
     border-width: 2px;
 }
+
+
+h1,h2,p{
+    margin: 0;
+}
+
 
 .intro main .enroll {
     background-color: #fff;
@@ -167,6 +244,7 @@ nav .signup-btn .signup {
 }
 
 .intro footer div {
+ 
     position: relative;
 }
 
@@ -174,7 +252,7 @@ nav .signup-btn .signup {
     position: absolute;
     transform: translate(-50%,-50%);
     font-size: var(--para-size);
-    top: 70%;
+    top: 55%;
     left: 50%;
     color: #fff;
 }
@@ -254,10 +332,13 @@ nav .signup-btn .signup {
 }
 
 
+
 .p-top .p1 {
-    font-weight: 500;
+    line-height: 1.6;
+    font-weight: 500 !important;
+  
     letter-spacing: -.5px;
-    color: #28285e;
+    color: #2D2D2D;
     margin-left: 2rem;
     width: 80%;
 }
@@ -269,24 +350,28 @@ nav .signup-btn .signup {
 }
 
 .para .p2 {
+    line-height: 1.6;
     font-weight: var(--para-weight);
     font-size: var(--para-size);
     padding:0 3rem;
-    color: var(--para-color);
+color: var(--para-color);
+
     width: 90%;
 }
 
 .para .sign {
-    padding: 0 1rem;
+    padding: 0 3rem;
     margin: 1rem 0;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .sign .read-more {
     color: var(--para-color);
+    padding-right: 8px;
+
     text-decoration: none;
     font-weight: var(--para-weight);
     font-size: var(--para-size);
@@ -338,7 +423,15 @@ nav .signup-btn .signup {
     height: 1840px;
 }
 
+@media(min-width:980px){
+    .content .box-1 {
+        padding-left: 3.8rem;
+    }
+}
+
+
 .content .box-1 {
+   
     width: 50%;
     height: 100%;
     transform: translate(10%,35%);
@@ -353,7 +446,9 @@ nav .signup-btn .signup {
     display: flex;
     overflow-y: scroll;
 }
-
+.content .box-2::-webkit-scrollbar {
+    display: none;
+}
 .content .box-1 h1 {
     display: flex;
     justify-content: flex-start;
@@ -382,8 +477,10 @@ nav .signup-btn .signup {
 
 .state img {
     position: absolute;
-    width: 50px;
-    left: -62.5px;
+    width: 38px !important;
+    height: 38px !important;
+    left: -55px;
+    margin-right: 2rem;
 }
 
 .intro-3 ::-webkit-scrollbar {
@@ -515,16 +612,21 @@ nav .signup-btn .signup {
 }
 
 .overlay .description h4 {
+    color: #fff;
+    margin: 0;
     font-weight: 500;
+    font-size: 1.1rem !important;
 }
 
 .overlay .description p {
-    font-size: 12px;
+    margin-top: 6px;
+    columns: #B5B5B5 !important;
+    font-size: 10px;
     font-weight: var(--para-weight);
 }
 
 .container .meet {
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 
 .meet p {
@@ -534,7 +636,7 @@ nav .signup-btn .signup {
 }
 
 .meet h1 {
-    color: #28285e;
+    color: #2D2D2D;
     font-size: 2rem;
 }
 
@@ -553,6 +655,11 @@ nav .signup-btn .signup {
     height: 100%;
 }
 
+@media(min-width:980px){
+    .intro-5 .box1 {
+        padding-left:8rem !important;
+    }
+}
 
 .intro-5 .box1 {
     display: flex;
@@ -564,6 +671,7 @@ nav .signup-btn .signup {
 
 .box1 h1 {
     background: var(--h1-color);
+    font-size: 2.5rem !important;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -592,8 +700,15 @@ nav .signup-btn .signup {
 
 /* intro 6 */
 
+.seal_in_rslt{
+    margin-bottom: 3rem;
+    font-size: 2.58rem;
+    text-align: center;
+
+}
+
 .intro-6 {
-    height: 720px;
+    
     width: 100%;
     background-color: #fafdfc;
 }
@@ -623,7 +738,8 @@ nav .signup-btn .signup {
 }
 
 .top-6 h1 {
-    color: #28285e;
+   font-weight: 600 !important;
+   font-size: 1.6rem !important;
 }
 
 .intro-6 .container-6 .content {
@@ -634,7 +750,7 @@ nav .signup-btn .signup {
     margin-bottom: 5rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    padding: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
 }
 
 .intro-6 ::-webkit-scrollbar {
@@ -652,7 +768,7 @@ nav .signup-btn .signup {
 
 .container-6 .content .rectangle-3086 {
     position: absolute;
-    width: 2680px;
+    width: 1982px;
     height: 4px;
     left: 0;
     top: 30%;
@@ -660,13 +776,21 @@ nav .signup-btn .signup {
     border-radius: 50px;
 
 }
+.gradient-text {
+    background: linear-gradient(116.82deg, #017BFF 0%, #0C1678 100%) !important;
+
+    -webkit-background-clip: text !important; /* For Safari */
+    background-clip: text !important;
+    color: transparent !important; /* Hide original text */
+   
+}
 
 .content .carousel {
-    width: 2680px;
+    width: 1982px;
     display: flex;
     position: absolute;
     top: 18%;
-    height: 333px;
+    
 }
 
 .carousel .steps {
@@ -677,16 +801,20 @@ nav .signup-btn .signup {
 }
 
 .steps h5 {
+    font-size: 1rem;
     height: 1.5rem;
-    color: #28285e;
+    color:var(--linear-color) !important;
 }
 
 .steps img {
-    height: 60px;
-    width: 60px;
+    margin-top: 0px;
+    height: 32px;
+    width: 32px;
+
 }
 
 .steps h4 {
+    margin: 1rem 0;
     height: 20%;
     height: 63.3px;
     color: #28285e;
@@ -699,6 +827,10 @@ nav .signup-btn .signup {
     font-weight: var(--para-weight);
 }
 
+.seal_the_result{
+   color: linear-gradient(116.82deg, #017BFF 0%, #0C1678 100%) !important;
+
+}
 /* intro 7 */
 
 .intro-7 {
@@ -714,14 +846,14 @@ nav .signup-btn .signup {
     position: absolute;
     top: 0;
     left: 0;
-    width: 35%;
+    width: 17%;
 }
 
 .intro-7 .frame-440 {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 35%;
+    width: 20%;
 }
 
 .intro-7 .display {
@@ -755,7 +887,7 @@ nav .signup-btn .signup {
 /* intro 8 */
 
 .intro-8 {
-    background-color: #EDFBFA;
+    /* background-color: #EDFBFA; */
     overflow-x: hidden;
 }
 
@@ -768,6 +900,7 @@ nav .signup-btn .signup {
 }
 
 .intro-8 .content .top {
+    width:100%;
     height: 20%;
     display: flex;
     flex-direction: column;
@@ -806,6 +939,8 @@ nav .signup-btn .signup {
 }
 
 .plans .plan {
+    box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 3px 0px;
+
     width: 280px;
     height: 280px;
     background-color: #fff;
@@ -1065,7 +1200,7 @@ nav .signup-btn .signup {
 /* intro 11 */
 
 .intro-11 {
-    height: 620px;
+
     padding-bottom: 5rem;
 }
 
@@ -1097,6 +1232,10 @@ nav .signup-btn .signup {
     font-weight: 500;
     color: #28285e;
 }
+.article-rm{
+    font-size: 11.7px;
+    color: var(--para-color);
+}
 
 .content .articles {
     height: 80%;
@@ -1107,30 +1246,40 @@ nav .signup-btn .signup {
 }
 
 .articles .article {
-    width: 250px;
+    width: 323px;
     height: 100%;
     margin: 0 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    
+    
     text-decoration: none;
     padding: 1rem 0;
     position: relative;
     cursor: pointer;
     grid-row: 1;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2); */
 }
 
 .article img {
-    width: 220px;
+    width: 280px;
 }
 
 .article h3 {
-    font-size: .7rem;
+    font-weight: 500;
+    font-size: 0.95rem;
     color: #28285e;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
+}
+.article-rm-main{
+    margin-top: 1rem;
+    
+}
+.article-rm-main p{
+    margin-right: 0.6rem;
+    font-weight: 600 !important;
+
 }
 
 .article .description {
@@ -1138,7 +1287,8 @@ nav .signup-btn .signup {
 }
 
 .article .description p {
-    font-size: 10px;
+    font-size: 11.7px;
+
     color: var(--para-color);
 }
 
@@ -1183,6 +1333,57 @@ nav .signup-btn .signup {
     left: 5px;
 }
 
+
+/* faq */
+.faq_main_title{
+    font-size: 2rem;
+    font-weight: 500;
+   
+}
+.uk-accordion-content{
+    color: var(--para-color);
+    font-size: 0.9rem;
+}
+.faq_sub_des{
+    color: var(--para-color);
+    font-size: 0.9rem;
+}
+@media (min-width: 980px){
+.faq-sec01{
+    padding-right: 2.5rem;
+}
+.faq-sec02{
+    padding-left: 2.5rem;
+}
+
+.uk-container {
+    max-width: 1026px;
+}
+}
+.uk-accordion-title{
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #28285e; 
+}
+.uk-open>.uk-accordion-title::before {
+    background-image: url(./img/accordion_close.svg);
+}
+.uk-accordion-title::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    margin-left: 10px;
+    float: right;
+    background-image: url(./img/accordion_open.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.accordion-list{
+    margin-bottom: 2.6rem;
+}
+.txt-light{
+    color: #fff  !important;
+}
 /* intro 12 */
 
 .intro-12 {
@@ -1221,10 +1422,11 @@ nav .signup-btn .signup {
 
 .box-l .read-more,
 .box-r .read-more {
+    left: -1.2rem;
     display: flex;
     align-items: center;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 3rem;
     width: 100%;
     height: 50%;
@@ -1259,7 +1461,8 @@ nav .signup-btn .signup {
 }
 
 .intro-13 header {
-    height: 20%;
+    padding: 0 2rem;
+    height: 12%;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -1280,7 +1483,7 @@ nav .signup-btn .signup {
 }
 
 .intro-13 main .map {
-    width: 50%;
+    width: 71%;
 }
 
 main .round {
@@ -1339,6 +1542,7 @@ main .round {
 }
 
 .intro-13 footer {
+    padding: 0 6rem;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -1386,6 +1590,37 @@ footer .menu li a:any-link {
     color: var(--para-color);
 }
 
+.rating h2{
+    color:#28285E;
+       position: relative;
+    z-index: 999;
+    
+}
+
+.rating p{
+    color:var(--para-color);
+       position: relative;
+    z-index: 999;
+    
+}
+
+.rating a{
+    color:#28285E !important;
+       position: relative;
+    z-index: 999;
+
+
+    
+}
+.rating{
+    position: relative;
+    z-index: 999;
+}
+
+.uk-position-bottom-right.uk-position-small{
+    margin-bottom: 2rem;
+    margin-right: 12rem;
+}
 
 
 /* RESPONSIVE PART */
@@ -1889,9 +2124,13 @@ footer .menu li a:any-link {
     .content .carousel {
         top: 20.5%;
     }
+   
     .steps img {
-        height: 40px;
-        width: 40px;
+        height: 36px;
+        width: 36px;
+    }
+    .steps img {
+        margin-top: 2px;
     }
 
     .top-6 p {
@@ -2300,3 +2539,45 @@ footer .menu li a:any-link {
         margin: 1rem 0;
     }
 }
+
+
+
+
+
+
+/* scroller anim */
+ 
+@layer animation.reveal {
+    .subject {
+      opacity: 0;
+    }
+
+    .reveal-up {
+      animation: fade-in 660ms ease forwards,
+        slide-up 1000ms cubic-bezier(0, 0, 0.1, 1) forwards;
+    }
+
+    .reveal-down {
+      animation: fade-in 660ms ease forwards,
+        slide-down 1000ms cubic-bezier(0, 0, 0.1, 1) forwards;
+    }
+
+    @keyframes fade-in {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slide-up {
+      from {
+        transform: translateY(-100px);
+      }
+    }
+
+    @keyframes slide-down {
+      from {
+        transform: translateY(100px);
+      }
+    }
+  }
+ 
