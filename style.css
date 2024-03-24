@@ -1622,6 +1622,109 @@ footer .menu li a:any-link {
     margin-right: 12rem;
 }
 
+/* contact.html */
+
+.contact-main {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.contact-link,
+.contact-logo,
+.form,
+.info {
+    height: 100%;
+    flex-basis: 25%;
+}
+
+.name,
+.email,
+.support,
+.message {
+    display: flex;
+    height: 25%;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.num {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.f-top {
+    height: 20%;
+}
+
+.f-top .form-h1 {
+    font-size: 2rem;
+}
+
+.f-top p {
+    font-size: var(--para-size);
+}
+
+form {
+    height: 80%;
+    width: 100%;
+}
+
+.name-box,
+.email-box,
+.support-box,
+.message-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.name-box label, 
+.email-box label, 
+.support-box label, 
+.message-box label {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: #fff;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.contact-link a:any-link {
+    color: #fff;
+}
+
+.contact-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 
 /* RESPONSIVE PART */
 
