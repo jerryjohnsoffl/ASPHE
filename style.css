@@ -152,6 +152,8 @@ section {
 }
 
 .intro nav .menu a {
+    font-weight: 400;
+    font-size: 0.9rem !important;
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
@@ -172,7 +174,26 @@ nav .signup-btn .signup {
 }
 
 nav .signup-btn .login {
-    background-color: #fff;
+    background-color: #ffffff00;
+    color: #fff;
+}
+
+.login:focus{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.signup:focus{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.contact-btn:focus{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.enroll-btn:focus{
+    background-color: #fff !important;
+    color: #000 !important;
 }
 
 nav .signup-btn .signup {
@@ -204,7 +225,8 @@ nav .signup-btn .signup {
 @media(min-width:980px){
 
     .intro main p {
-        width: 48%;
+        font-weight: 300 !important;
+        width: 66%;
     }
 }
 
@@ -230,7 +252,8 @@ h1,h2,p{
 
 
 .intro main .enroll {
-    background-color: #fff;
+    background-color: #ffffff00;
+    color:#fff;
 }
 
 .intro main .contact {
@@ -243,8 +266,19 @@ h1,h2,p{
     justify-content: center;
 }
 
+@media(min-width:980px){
+    .my-animation-container{
+        left: 50%;
+    }
+    .intro footer div {
+        width: 100%;
+left: 50%;
+    }
+}
+
+
 .intro footer div {
- 
+    
     position: relative;
 }
 
@@ -253,7 +287,7 @@ h1,h2,p{
     transform: translate(-50%,-50%);
     font-size: var(--para-size);
     top: 55%;
-    left: 50%;
+   
     color: #fff;
 }
 
@@ -420,7 +454,7 @@ color: var(--para-color);
     position: absolute;
     left: 5%;
     top: 0;
-    height: 1840px;
+    height: 2024px;
 }
 
 @media(min-width:980px){
