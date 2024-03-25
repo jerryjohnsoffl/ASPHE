@@ -1704,7 +1704,7 @@ footer .menu li a:any-link {
 
 @keyframes turn {
     from {transform: rotate(0deg);}
-    to {transform: rotate(-360deg);}
+    to {transform: rotate(360deg);}
 }
 
 .name,
@@ -1722,7 +1722,7 @@ footer .menu li a:any-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--para-color);
     flex-basis: 30%;
 }
 
@@ -1780,7 +1780,7 @@ input {
     border-bottom: 2px solid #fff;
     outline: none;
     caret-color: #fff;
-    padding: .3rem;
+    padding: .5rem .3rem;
     width: 100%;
 }
 
