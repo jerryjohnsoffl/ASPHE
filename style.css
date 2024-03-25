@@ -425,10 +425,27 @@ color: var(--para-color);
 
 @media(min-width:980px){
     .content .box-1 {
-        padding-left: 3.8rem;
+        /* padding-left: 3.8rem; */
+    }
+    .connecting_dots_margin{
+       padding-left: 11rem;;
+    }
+    .footer_foot_sub{
+        max-width: 1092px;
+    margin: auto;
+    padding: 0.8rem 0;
+    border-top: 3px solid #F5F5F5;
+
     }
 }
 
+.footer_foot_sub p{
+    font-weight: 500 !important;
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--para-color);
+
+}
 
 .content .box-1 {
    
