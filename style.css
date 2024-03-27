@@ -14,6 +14,62 @@ body {
     align-items: center;
     font-size: 2em;
   } */
+  /* .nav-bar {
+    position: relative;
+    text-decoration: none;
+    color: #000;  
+}
+
+.nav-bar:hover::before,
+.nav-bar:hover::after {
+    content: "(";
+    position: absolute;
+    top: 0;
+}
+
+.nav-bar:hover::after {
+    content: ")";
+    right: -10px;
+}
+
+.nav-bar:hover::before {
+    left: -10px;
+} */
+.nav-bar {
+    position: relative;
+    text-decoration: none;
+    color: #000; /* Change the color as per your design */
+}
+
+.nav-bar::before,
+.nav-bar::after {
+    content: "(";
+    position: absolute;
+    top: 0;
+    opacity: 0; /* Initially hide the brackets */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Added transition property */
+    transform: scaleX(0); /* Initially scale the brackets to 0 */
+    transform-origin: center; /* Set the transform origin to center */
+}
+
+.nav-bar::after {
+    margin-right: -16px;
+
+    content: ")";
+    right: 0;
+}
+
+.nav-bar::before {
+    margin-left: -15px;
+    left: 0;
+}
+
+.nav-bar:hover::before,
+.nav-bar:hover::after {
+    opacity: 1; /* Show the brackets on hover */
+    transform: scaleX(1); /* Scale the brackets to 1 */
+}
+
 
 
 .uk-light .uk-dotnav>*>*{
@@ -480,7 +536,7 @@ color: var(--para-color);
        padding-left: 11rem;;
     }
     .footer_foot_sub{
-        max-width: 1092px;
+        max-width: 1123px;
     margin: auto;
     padding: 0.8rem 0;
     border-top: 3px solid #F5F5F5;
@@ -1619,7 +1675,7 @@ main .round {
 footer .logo {
     display: flex;
     flex-direction: column;
-    align-items: center;
+   
 } 
 
 .logo .b-logo {
@@ -1843,6 +1899,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.introhome{
+    justify-content: normal !important;
 }
 
 .frame442 {
