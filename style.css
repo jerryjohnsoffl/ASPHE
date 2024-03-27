@@ -1705,14 +1705,31 @@ footer .menu li a:any-link {
     flex-basis: 25%;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-logo img {
+    animation-name: turn;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+}
+
+@keyframes turn {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
 .name,
 .email,
 .support,
 .message {
     display: flex;
     height: 25%;
-    width: 20%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 .num {
@@ -1720,24 +1737,34 @@ footer .menu li a:any-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--para-color);
+    flex-basis: 30%;
 }
 
 .f-top {
     height: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .f-top .form-h1 {
     font-size: 2rem;
 }
 
-.f-top p {
-    font-size: var(--para-size);
+.f-top .form-p {
+    font-size: 10px;
+    width: 100%;
+    color: var(--para-color);
 }
 
 form {
     height: 80%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .name-box,
@@ -1747,6 +1774,8 @@ form {
     position: relative;
     display: flex;
     align-items: center;
+    height: 100%;
+    flex-basis: 70%;
 }
 
 .name-box label, 
@@ -1754,17 +1783,32 @@ form {
 .support-box label, 
 .message-box label {
     position: absolute;
-    top: 0;
-    left: 10%;
+    top: 10%;
+    left: 2%;
     color: #fff;
+    font-size: 12px;
 }
 
 input {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #fff;
+    outline: none;
+    caret-color: #fff;
+    padding: .5rem .3rem;
+    width: 100%;
 }
 
+input::placeholder {
+    color: var(--para-color);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.contact-link h4,
+.info h4{
+    color: var(--para-color);
+}
 
 .contact-link {
     display: flex;
@@ -1789,6 +1833,7 @@ input {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+    text-align: right;
 }
 
 /* about.html */
