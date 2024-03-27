@@ -102,3 +102,28 @@ addRevealEffect(elementsToReveal);
  intro2.addEventListener('click', () => {
    otherSection.scrollIntoView({ behavior: 'smooth' });
  });
+// JavaScript code
+// document.addEventListener('DOMContentLoaded', function() {
+//   var sections = document.querySelectorAll('.section');
+//   var body = document.body;
+//   var currentSectionIndex = 0;
+//   var ticking = false;
+  
+//   function scrollToNextSection() {
+//     body.classList.add('scroll-disabled');
+//     if (currentSectionIndex < sections.length - 1) {
+//       currentSectionIndex++;
+//       window.scrollTo({
+//         top: sections[currentSectionIndex].offsetTop,
+//         behavior: 'smooth'
+//       });
+//     }
+//     setTimeout(function() {
+//       body.classList.remove('scroll-disabled');
+//     }, 1000); // Adjust the delay as needed to match the scroll duration
+//   }
+  
+//   document.addEventListener('click', function() {
+//     scrollToNextSection();
+//   });
+// });
