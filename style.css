@@ -463,6 +463,28 @@ color: var(--para-color);
 
     width: 90%;
 }
+@media(max-width:480px){
+    .para .p2 {
+        padding: 0 1rem !important;
+    }
+    .p-top .p1 {
+        margin-left: 1rem;
+    }
+    .para .sign {
+        padding: 0 0rem !important;
+       
+    }
+    .para .uk-button{
+        padding-left: 1rem !important;
+        color: #00B1B9 !important;
+        text-transform: none;
+    }
+   
+.main .image {
+    /* position: relative;
+    top: -16rem; */
+}
+}
 
 .para .sign {
     padding: 0 3rem;
@@ -2002,6 +2024,8 @@ section {
 /* 820px and below */
 @media screen and (max-width:920px) {
 
+
+
     /* intro */
     .intro header {
         width: 100%;
@@ -2052,6 +2076,12 @@ section {
     .intro-2 {
         min-height: 1440px;
     }
+    @media(max-width:480px){
+        .intro-2 {
+            min-height: 440px !important;
+        }
+    }
+    
 
     .rectangle .main {
         padding: 1rem 0;
@@ -2655,7 +2685,7 @@ section {
     }
 
     .p-bottom {
-        top: 30%;
+        top: 22%;
         width: 100%;
     }
 
@@ -2669,8 +2699,8 @@ section {
         margin-top: 0.2rem;
         margin-right: 3rem;
         width: 5px;
-        height: 60%;
-        min-height: 50%;
+        height: 45%;
+        min-height: 32%;
         background-color: #28285e;
         position: absolute;
         left: 0%;

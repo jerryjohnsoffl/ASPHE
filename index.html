@@ -19,10 +19,79 @@
 </head>
 
 <body>
+
   <section class="intro introhome">
-    <header class=" ">
+    <div class="  uk-hidden@m   uk-flex uk-flex-between" style="width: 100%; padding: 2rem 1rem;">
+
+
+
+      <a href="#mobMenu" uk-toggle><img style="width: 147px; " src="./img/LOGO WHITE0948.svg"> </a>
+      <a href="#mobMenu" uk-toggle><img style="width: 32px; " src="./img/Group 19357.svg"> </a>
+
+    </div>
+
+    <div id="mobMenu" uk-offcanvas="overlay: false; flip: true" style="font-size:16px !important;    position: static;">
+      <div class="uk-offcanvas-bar uk-flex uk-flex-column scrollno"
+        style="  width: 100%;  background: linear-gradient(to bottom right, #017BFF, #0C1678);">
+        <div class="uk-flex uk-flex-between">
+          <img style="width: 147px; " src="./img/LOGO WHITE0948.svg">
+          <button style="    top: 2.69%;
+          right:8%;    color: #fff;
+          border: 2px solid #fff;border-radius: 50%;width: 32px;height: 32px;
+          background-color: #ffffff00;" class="txt-dark uk-offcanvas-close" type="button">X</button>
+        </div>
+
+        <ul class="uk-nav uk-nav-primary" style="margin-top:58px;margin-left:20px;">
+          <li>
+            <a href="https://skinmumma.myshopify.com/pages/about-us" class="txt-dark">
+              <h4 class="txt-dark">{{ section.settings.head01 }}</h4>
+            </a>
+          </li>
+          <li>
+            <ul uk-accordion>
+              <li>
+                <a class="uk-accordion-title accor-title txt-dark" href>
+                  <h4 class="txt-dark">{{ section.settings.head02 }}<span uk-drop-parent-icon></span></h4>
+                </a>
+                <div class="uk-accordion-content">
+                  <div><a href="/collections/skincare" class="txt-dark">
+                      <h4 class="txt-dark">Skincare</h4>
+                    </a></div>
+                  <hr class="margin-small">
+                  <div><a href="/collections/haircare" class="txt-dark">
+                      <h4 class="txt-dark">HairCare</h4>
+                    </a></div>
+                  <hr class="margin-small">
+                  <div><a href="/collections/skincombos" class="txt-dark">
+                      <h4 class="txt-dark">Skincare combo</h4>
+                    </a></div>
+                  <hr class="margin-small">
+                  <div><a href="/collections/haircombo" class="txt-dark">
+                      <h4 class="txt-dark">Haircare combo</h4>
+                    </a></div>
+                </div>
+              </li>
+            </ul>
+            <!-- <a  href="https://skinmumma.myshopify.com/collections/all"  class="txt-dark"   ><h4 class="txt-dark">{{ section.settings.head02 }}</h4></a> -->
+          </li>
+          <li>
+            <a href="https://skinmumma.myshopify.com/blogs/news" class="txt-dark">
+              <h4 class="txt-dark">{{ section.settings.head03 }}</h4>
+            </a>
+          </li>
+          <li>
+            <a href="https://skinmumma.myshopify.com/pages/contact" class="txt-dark">
+              <h4 class="txt-dark">{{ section.settings.head04 }}</h4>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <header class="uk-visible@m ">
       <img src="./img/LOGO WHITE0948.svg" alt="" />
-      <nav>
+      <nav class="">
         <nav class="menu">
           <a href="" class="nav-bar link">Home</a>
           <a href="#intro-2" class="nav-bar link">About Us</a>
@@ -94,15 +163,20 @@
               efficient healthcare environment.
             </p>
             <div class="sign">
-              <a class="uk-button uk-button-default" style="border-color: #fff !important;" href="#modal-center" uk-toggle>Read more
-                <img src="./img/Property 1=Frame 136.png" alt="" />
+
+
+
+
+              <a class="uk-button uk-button-default" style="border-color: #fff !important;" href="#modal-center"
+                uk-toggle>Read more
+                <img  src="./img/Property 1=Frame 136.png" alt="" />
               </a>
 
 
               <div id="modal-center" class="uk-flex-top" uk-modal>
                 <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 
-                  <button class="uk-modal-close-default" type="button"  uk-close></button>
+                  <button class="uk-modal-close-default" type="button" uk-close></button>
 
                   <h1 class="uk-text-center modal-main-title gradient-text">Welcome to the Academy of Safe Patient <br>
                     Handling Excellence (ASPHE)!</h1>
@@ -114,9 +188,7 @@
                     the risk of injuries, and
                     enhance the overall quality of healthcare delivery.
                   </p>
-                  <img class="uk-margin-medium-top" style="    object-fit: cover;
-            width: 100%;
-            height: 565px;" src="./img/Rectangle 3085.png" alt="">
+                  <img class="uk-margin-medium-top" style="    object-fit: cover;  width: 100%;  height: 565px;" src="./img/Rectangle 3085.png" alt="">
 
 
 
@@ -197,13 +269,18 @@
 
                 </div>
               </div>
-              <img src="./img/Frame 325.png" alt="" />
+              <img class="uk-visible@s" src="./img/Frame 325.png" alt="" />
+               
             </div>
+            <div class=""> <img width="163px" class="uk-hidden@s  " src="./img/Frame 325.png" alt="" /></div>
           </div>
         </div>
-        <div class="image uk-position-right" style="top: 6rem;">
+        <div class="image uk-position-right uk-visible@s" style="top: 6rem;">
           <img style="width:100% !important" src="./img/Rectangle 3085.png" alt="" />
         </div>
+        <!-- <div class=" uk-hidden@s">
+          <img style="width:100% !important" src="./img/Rectangle 3085.png" alt="" />
+        </div> -->
       </div>
     </div>
   </section>
@@ -969,7 +1046,7 @@
   </section>
 
   <section id="intro-13" class="intro-13 uk-container uk-margin-top">
-    <header>
+    <header class="">
       <h2>Contact us</h2>
       <div class="box">
         <div class="m-location">
