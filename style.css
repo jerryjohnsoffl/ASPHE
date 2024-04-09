@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+/* height adj mobile */
+
+@media(max-width:480px) {
+
+    .content .top-11 {
+        height: auto !important;
+        }
+
+        .blog-thumbnail{
+            width: 100% !important;
+        }
+        .articles .article {
+            margin: 1.2rem 0 !important;
+        }        
+    
+}
+
+
+
 /* 
 body {
  
@@ -2081,7 +2100,26 @@ section {
             min-height: 440px !important;
         }
     }
+    .footer-sub-links{
+        color: var(--para-color);
+        font-size: var(--para-size);
+    }
+    .footer_link .link-main-title{
+        margin-bottom: 8px !important;
+        color: #000 !important;
+
+        font-size: 1.2rem !important;
+        font-weight: 600  !important;
+    }
+
+    .uk-margin-auto{
+        margin: auto !important;
+    }
     
+
+    .txt-light{
+        color: #fff !important;
+    }
 
     .rectangle .main {
         padding: 1rem 0;
