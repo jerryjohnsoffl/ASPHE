@@ -41,6 +41,11 @@
 
 @media(max-width:480px) {
 
+    .ab-img{
+        position: relative  !important;
+        top: 4rem !important;
+    }
+
     .double-q{
         z-index: 99;
         left: 1.5rem;
