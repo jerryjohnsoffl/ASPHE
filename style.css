@@ -41,6 +41,45 @@
 
 @media(max-width:480px) {
 
+    .content .state p {
+        width: 93% !important;
+
+    }
+
+    .states .state p {
+        font-size: 13px !important;
+    }
+
+    .intro-3 .content .line {
+       
+        left: 12% !important;
+
+    }
+
+
+    .states {
+        margin-left: 5rem !important;
+    }
+
+
+
+
+    .content .box-2 {
+       
+        overflow-y: visible !important;
+    }
+    
+
+ 
+        .states {
+            position: relative;
+            top: -4.6rem;
+            margin-left: 3.5rem;
+        }
+    
+
+
+
     .ab-img{
         position: relative  !important;
         top: 4rem !important;
@@ -2457,7 +2496,7 @@ section {
     /* intro 3 */
 
     .intro-3 {
-        height: 1240px;
+        height: 1555px;
     }
 
     .intro-3 .content {
